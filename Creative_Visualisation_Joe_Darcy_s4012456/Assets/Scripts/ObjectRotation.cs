@@ -5,11 +5,11 @@ using UnityEngine;
 public class ObjectRotation : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed;
-
+    [SerializeField] private Vector3 axis;
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+        transform.Rotate(axis * rotationSpeed * Time.deltaTime);
     }
 }
