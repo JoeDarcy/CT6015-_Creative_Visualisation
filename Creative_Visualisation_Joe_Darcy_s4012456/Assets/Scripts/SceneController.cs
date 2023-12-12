@@ -5,32 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    [SerializeField] private int sceneToLoad;
-
-    private SpriteRenderer spriteRenderer;
-    private Color colour;
+    private Scene currentScene;
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        currentScene = SceneManager.GetActiveScene();
     }
 
-    private void OnMouseEnter()
+    // Update is called once per frame
+    void Update()
     {
-        colour = spriteRenderer.color;
-        colour.a = 0.2f;
-        spriteRenderer.color = colour;
-    }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            SceneManager.LoadScene(currentScene.buildIndex + 1);
+        }
 
-    private void OnMouseExit()
-    {
-        colour = spriteRenderer.color;
-        colour.a = 0.05f;
-        spriteRenderer.color = colour;
-    }
-
-    private void OnMouseDown()
-    {
-        SceneManager.LoadScene(sceneToLoad);
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            SceneManager.LoadScene(currentScene.buildIndex - 1);
+        }
     }
 }
