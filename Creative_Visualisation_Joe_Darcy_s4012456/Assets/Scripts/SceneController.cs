@@ -15,12 +15,12 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) && currentScene.buildIndex < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(currentScene.buildIndex + 1);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && currentScene.buildIndex > 0)
         {
             SceneManager.LoadScene(currentScene.buildIndex - 1);
         }

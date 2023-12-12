@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/30_Galaxy.unity
-    guid: ef6ae020a6c9749d2b844513295514a0
+    path: Assets/Scenes/10_Earth.unity
+    guid: cb92a963448104cf0b15f99f6eb7e94e
   - enabled: 1
     path: Assets/Scenes/20_Solar_System.unity
     guid: 68fb760198ee1486eb6030a4fc15cd78
+  - enabled: 1
+    path: Assets/Scenes/30_Galaxy.unity
+    guid: ef6ae020a6c9749d2b844513295514a0
+  - enabled: 1
+    path: Assets/Scenes/40_Collision.unity
+    guid: 7d5bd0d0585614da09c42d1d34f97613
   m_configObjects: {}
