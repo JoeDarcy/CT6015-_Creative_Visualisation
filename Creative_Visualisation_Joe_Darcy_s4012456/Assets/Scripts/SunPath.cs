@@ -21,7 +21,7 @@ public class SunPath : MonoBehaviour
             lerpTime += lerpSpeed * Time.deltaTime;
             speed = Mathf.Lerp(speed, moveSpeed, lerpTime);
         }
-        Debug.Log(speed);
+        //Debug.Log(speed);
         transform.Translate(moveDirection * speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space))

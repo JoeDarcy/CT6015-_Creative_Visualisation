@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/40_Collision.unity
     guid: 7d5bd0d0585614da09c42d1d34f97613
+  - enabled: 1
+    path: Assets/Scenes/50_Explosion.unity
+    guid: eb2e6fb67554e40f6a5a9e3cb0f07f3a
   m_configObjects: {}
