@@ -890,10 +890,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text
       objectReference: {fileID: 0}
+    - target: {fileID: 4955380959940386576, guid: 248690995248b4e4ba38d5d4e467970c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 19.12
+      objectReference: {fileID: 0}
     - target: {fileID: 8456795641118724336, guid: 248690995248b4e4ba38d5d4e467970c,
         type: 3}
       propertyPath: m_text
       value: ' 514,495 mph'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456795641118724336, guid: 248690995248b4e4ba38d5d4e467970c,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456795641118724336, guid: 248690995248b4e4ba38d5d4e467970c,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
